@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katalog Produk - TEFA UHT</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="topbar text-white small py-1">
+    <div class="container d-flex justify-content-between">
+      <span>POLITEKNIK NEGERI JEMBER</span>
+      <span class="d-none d-md-inline">Pendidikan vokasi · Inovasi · Kolaborasi</span>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-md bg-white border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex flex-column lh-1" href="Beranda.html">
+        <strong class="brand-name">TEFA UHT</strong>
+        <small class="brand-sub">Unit Produksi Susu · Polije</small>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Buka menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto gap-md-4">
+          <li class="nav-item"><a class="nav-link" href="Beranda.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang Kami</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="produk.html">Produk</a></li>
+          <li class="nav-item"><a class="nav-link" href="layanan.html">Layanan</a></li>
+          <li class="nav-item"><a class="nav-link" href="informasi.html">Informasi</a></li>
+          <li class="nav-item"><a class="nav-link" href="hubungi.html">Hubungi Kami</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header class="page-header py-4 py-md-5">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb small mb-3">
+            <li class="breadcrumb-item"><a href="Beranda.html">Beranda</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Produk</li>
+          </ol>
+        </nav>
+        <h1 class="page-title fw-bold mb-2">Katalog Produk</h1>
+        <p class="text-body-secondary mb-0">Eksplorasi ragam produk susu dari ruang pembelajaran TEFA UHT.</p>
+      </div>
+    </header>
+
+    <section class="container pb-5">
+      <h2 class="h4 fw-bold section-heading mb-3">Semua produk</h2>
+      <!-- GRID KATALOG: row-cols-1 row-cols-sm-2 row-cols-lg-3 = 1 kolom di HP, 2 di tablet, 3 di laptop. g-3 = jarak antar kartu. card = komponen kartu; d-flex justify-content-between = kategori di kiri, ukuran di kanan. -->
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
+        <div class="col">
+          <article class="card hover-card h-100 overflow-hidden" id="pasteurisasi-original" data-reveal>
+            <div class="ratio ratio-5x3 rounded-0 overflow-hidden bg-body-secondary "><img class="object-fit-cover" src="img/susu ori.jpg" alt="Susu pasteurisasi rasa original dalam botol"></div>
+            <div class="card-body">
+              <p class="d-flex justify-content-between gap-2 product-meta mb-2"><span class="text-primary fw-medium">Pasteurisasi</span><span class="text-body-secondary">250 ml · contoh</span></p>
+              <h3 class="product-title fw-bold section-heading mb-2">Susu Pasteurisasi Original</h3>
+              <p class="small text-body-secondary mb-0">Cita rasa susu yang alami untuk menemani aktivitas harian.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col">
+          <article class="card hover-card h-100 overflow-hidden" id="pasteurisasi-cokelat" data-reveal>
+            <div class="ratio ratio-5x3 rounded-0 overflow-hidden bg-body-secondary "><img class="object-fit-cover" src="img/susu cokelat.jpg" alt="Susu pasteurisasi rasa cokelat dalam botol"></div>
+            <div class="card-body">
+              <p class="d-flex justify-content-between gap-2 product-meta mb-2"><span class="text-primary fw-medium">Pasteurisasi</span><span class="text-body-secondary">250 ml · contoh</span></p>
+              <h3 class="product-title fw-bold section-heading mb-2">Susu Pasteurisasi Cokelat</h3>
+              <p class="small text-body-secondary mb-0">Perpaduan rasa susu dan cokelat dalam sajian praktis.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col">
+          <article class="card hover-card h-100 overflow-hidden" id="pasteurisasi-stroberi" data-reveal>
+            <div class="ratio ratio-5x3 rounded-0 overflow-hidden bg-body-secondary "><img class="object-fit-cover" src="img/susu straw.jpg" alt="Susu pasteurisasi rasa stroberi dalam botol"></div>
+            <div class="card-body">
+              <p class="d-flex justify-content-between gap-2 product-meta mb-2"><span class="text-primary fw-medium">Pasteurisasi</span><span class="text-body-secondary">250 ml · contoh</span></p>
+              <h3 class="product-title fw-bold section-heading mb-2">Susu Pasteurisasi Stroberi</h3>
+              <p class="small text-body-secondary mb-0">Kesegaran susu berpadu dengan rasa stroberi.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col">
+          <article class="card hover-card h-100 overflow-hidden" id="pasteurisasi-putih-manis" data-reveal>
+            <div class="ratio ratio-5x3 rounded-0 overflow-hidden bg-body-secondary "><img class="object-fit-cover" src="img/susu putih manis.jpg" alt="Susu pasteurisasi putih manis dalam botol"></div>
+            <div class="card-body">
+              <p class="d-flex justify-content-between gap-2 product-meta mb-2"><span class="text-primary fw-medium">Pasteurisasi</span><span class="text-body-secondary">250 ml · contoh</span></p>
+              <h3 class="product-title fw-bold section-heading mb-2">Susu Pasteurisasi Putih Manis</h3>
+              <p class="small text-body-secondary mb-0">Susu putih dengan rasa manis yang lembut.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col">
+          <article class="card hover-card h-100 overflow-hidden" id="susu-uht" data-reveal>
+            <div class="ratio ratio-5x3 rounded-0 overflow-hidden bg-body-secondary "><img class="object-fit-cover" src="img/susu uht.avif" alt="Produk susu UHT TEFA UHT"></div>
+            <div class="card-body">
+              <p class="d-flex justify-content-between gap-2 product-meta mb-2"><span class="text-primary fw-medium">UHT</span><span class="text-body-secondary">200 ml · contoh</span></p>
+              <h3 class="product-title fw-bold section-heading mb-2">Susu UHT</h3>
+              <p class="small text-body-secondary mb-0">Susu UHT dalam kemasan praktis untuk keseharian.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col">
+          <article class="card hover-card h-100 overflow-hidden" id="susu-steril" data-reveal>
+            <div class="ratio ratio-5x3 rounded-0 overflow-hidden bg-body-secondary "><img class="object-fit-cover" src="img/susu steril.jpeg" alt="Susu dituangkan ke dalam gelas"></div>
+            <div class="card-body">
+              <p class="d-flex justify-content-between gap-2 product-meta mb-2"><span class="text-primary fw-medium">Steril</span><span class="text-body-secondary">200 ml · contoh</span></p>
+              <h3 class="product-title fw-bold section-heading mb-2">Susu Steril</h3>
+              <p class="small text-body-secondary mb-0">Susu steril dalam kemasan praktis dan tahan lama.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="container pb-5">
+      <div class="cta-box rounded-3 p-4 d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+        <div>
+          <h3 class="h5 fw-bold mb-1">Ingin mengetahui produk lebih lanjut?</h3>
+          <p class="small text-body-secondary mb-0">Sampaikan produk yang Anda minati untuk memperoleh informasi ketersediaan dan ketentuan pemesanan.</p>
+        </div>
+        <a href="hubungi.html" class="btn btn-primary btn-sm px-3 flex-shrink-0">Hubungi Kami →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer text-white-50 pt-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <h4 class="h5 fw-bold text-white">TEFA UHT</h4>
+          <p class="small">Teaching Factory UHT Produksi Susu Politeknik Negeri Jember. Ruang belajar, produksi, dan kolaborasi pengolahan susu.</p>
+          <p class="small mb-0">Jl. Mastrip, Jember, Jawa Timur</p>
+        </div>
+        <div class="col-6 col-lg-4">
+          <h5 class="small fw-bold text-white">Jelajahi</h5>
+          <ul class="list-unstyled d-flex flex-wrap column-gap-3 row-gap-1 small mb-0">
+            <li><a href="Beranda.html">Beranda</a></li>
+            <li><a href="tentang.html">Tentang Kami</a></li>
+            <li><a href="produk.html">Produk</a></li>
+            <li><a href="layanan.html">Layanan</a></li>
+            <li><a href="informasi.html">Informasi</a></li>
+            <li><a href="hubungi.html">Hubungi Kami</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h5 class="small fw-bold text-white">Mari terhubung</h5>
+          <p class="small mb-0">Telepon contoh: 0331 000 000<br>Email contoh: tefa-uht@example.com<br>Bukan kontak resmi terverifikasi.</p>
+        </div>
+      </div>
+      <hr class="border-light opacity-25 mt-4">
+      <p class="small pb-4 mb-0">© <span id="year">2026</span> TEFA UHT · Politeknik Negeri Jember. Purwarupa website institusional. Detail produk, layanan, dan kontak bertanda contoh perlu diverifikasi sebelum digunakan.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

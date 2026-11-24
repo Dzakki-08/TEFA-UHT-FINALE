@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informasi - Galeri - TEFA UHT</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="topbar text-white small py-1">
+    <div class="container d-flex justify-content-between">
+      <span>POLITEKNIK NEGERI JEMBER</span>
+      <span class="d-none d-md-inline">Pendidikan vokasi · Inovasi · Kolaborasi</span>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-md bg-white border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex flex-column lh-1" href="Beranda.html">
+        <strong class="brand-name">TEFA UHT</strong>
+        <small class="brand-sub">Unit Produksi Susu · Polije</small>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Buka menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto gap-md-4">
+          <li class="nav-item"><a class="nav-link" href="Beranda.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang Kami</a></li>
+          <li class="nav-item"><a class="nav-link" href="produk.html">Produk</a></li>
+          <li class="nav-item"><a class="nav-link" href="layanan.html">Layanan</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="informasi.html">Informasi</a></li>
+          <li class="nav-item"><a class="nav-link" href="hubungi.html">Hubungi Kami</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header class="page-header py-4 py-md-5">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb small mb-3">
+            <li class="breadcrumb-item"><a href="Beranda.html">Beranda</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Informasi</li>
+          </ol>
+        </nav>
+        <h1 class="page-title fw-bold mb-2">Informasi</h1>
+        <p class="text-body-secondary mb-0">Cerita pembelajaran, dokumentasi ilustratif, dan panduan kegiatan di TEFA UHT.</p>
+      </div>
+    </header>
+
+    <section class="container pb-5">
+      <ul class="nav nav-pills subnav gap-2 mb-5">
+        <li class="nav-item"><a class="nav-link" href="informasi.html">Berita/Kegiatan</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="galeri.html">Galeri</a></li>
+      </ul>
+
+      <h2 class="section-title fw-bold mb-1">Ruang, proses, dan kreasi</h2>
+      <p class="small text-body-secondary mb-4">Dokumentasi ruang produksi, kegiatan pembelajaran, dan produk TEFA UHT.</p>
+      <!-- GRID GALERI: row-cols-1 row-cols-sm-2 row-cols-lg-3 = 1 / 2 / 3 kolom. Tombol foto memicu MODAL Bootstrap: data-bs-toggle="modal" + data-bs-target="#lightbox" membuka pop-up id="lightbox" di bawah halaman. data-img dan data-caption dibaca js/galeri.js. -->
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
+        <figure class="col mb-0" data-reveal>
+          <button type="button" class="gallery-btn ratio ratio-3x2 bg-body-secondary" data-bs-toggle="modal" data-bs-target="#lightbox" data-img="img/DSC00447.jpg" data-alt="Mesin dan tangki di ruang produksi TEFA UHT" data-caption="Ruang produksi TEFA UHT" aria-label="Perbesar foto: Ruang produksi TEFA UHT">
+            <img class="object-fit-cover" src="img/DSC00447.jpg" alt="Mesin dan tangki di ruang produksi TEFA UHT">
+          </button>
+          <figcaption class="mt-2">
+            <strong class="d-block gallery-name">Ruang produksi TEFA UHT</strong>
+            <span class="gallery-cap text-body-secondary">Fasilitas pengolahan susu</span>
+          </figcaption>
+        </figure>
+        <figure class="col mb-0" data-reveal>
+          <button type="button" class="gallery-btn ratio ratio-3x2 bg-body-secondary" data-bs-toggle="modal" data-bs-target="#lightbox" data-img="img/magang.jpg" data-alt="Peserta praktik mengenakan perlengkapan higienis di ruang produksi" data-caption="Praktik di ruang produksi" aria-label="Perbesar foto: Praktik di ruang produksi">
+            <img class="object-fit-cover" src="img/magang.jpg" alt="Peserta praktik mengenakan perlengkapan higienis di ruang produksi">
+          </button>
+          <figcaption class="mt-2">
+            <strong class="d-block gallery-name">Praktik di ruang produksi</strong>
+            <span class="gallery-cap text-body-secondary">Pembelajaran terapan</span>
+          </figcaption>
+        </figure>
+        <figure class="col mb-0" data-reveal>
+          <button type="button" class="gallery-btn ratio ratio-3x2 bg-body-secondary" data-bs-toggle="modal" data-bs-target="#lightbox" data-img="img/images.jpg" data-alt="Mesin pengolahan susu di ruang produksi" data-caption="Mesin pengolahan susu" aria-label="Perbesar foto: Mesin pengolahan susu">
+            <img class="object-fit-cover" src="img/images.jpg" alt="Mesin pengolahan susu di ruang produksi">
+          </button>
+          <figcaption class="mt-2">
+            <strong class="d-block gallery-name">Mesin pengolahan susu</strong>
+            <span class="gallery-cap text-body-secondary">Fasilitas TEFA UHT</span>
+          </figcaption>
+        </figure>
+        <figure class="col mb-0" data-reveal>
+          <button type="button" class="gallery-btn ratio ratio-3x2 bg-body-secondary" data-bs-toggle="modal" data-bs-target="#lightbox" data-img="img/susu straw.jpg" data-alt="Botol susu pasteurisasi rasa stroberi" data-caption="Susu pasteurisasi rasa stroberi" aria-label="Perbesar foto: Susu pasteurisasi rasa stroberi">
+            <img class="object-fit-cover" src="img/susu straw.jpg" alt="Botol susu pasteurisasi rasa stroberi">
+          </button>
+          <figcaption class="mt-2">
+            <strong class="d-block gallery-name">Susu pasteurisasi Strawberry</strong>
+            <span class="gallery-cap text-body-secondary">Foto produk</span>
+          </figcaption>
+        </figure>
+        <figure class="col mb-0" data-reveal>
+          <button type="button" class="gallery-btn ratio ratio-3x2 bg-body-secondary" data-bs-toggle="modal" data-bs-target="#lightbox" data-img="img/susu cokelat.jpg" data-alt="Botol susu pasteurisasi rasa cokelat" data-caption="Susu pasteurisasi rasa cokelat" aria-label="Perbesar foto: Susu pasteurisasi rasa cokelat">
+            <img class="object-fit-cover" src="img/susu cokelat.jpg" alt="Botol susu pasteurisasi rasa cokelat">
+          </button>
+          <figcaption class="mt-2">
+            <strong class="d-block gallery-name">Susu pasteurisasi cokelat</strong>
+            <span class="gallery-cap text-body-secondary">Foto produk</span>
+          </figcaption>
+        </figure>
+        <figure class="col mb-0" data-reveal>
+          <button type="button" class="gallery-btn ratio ratio-3x2 bg-body-secondary" data-bs-toggle="modal" data-bs-target="#lightbox" data-img="img/BANNER.webp" data-alt="Peserta kegiatan bersama di ruang produksi TEFA UHT" data-caption="Kegiatan di TEFA UHT" aria-label="Perbesar foto: Kegiatan di TEFA UHT">
+            <img class="object-fit-cover" src="img/BANNER.webp" alt="Peserta kegiatan bersama di ruang produksi TEFA UHT">
+          </button>
+          <figcaption class="mt-2">
+            <strong class="d-block gallery-name">Kegiatan di TEFA UHT</strong>
+            <span class="gallery-cap text-body-secondary">Dokumentasi kegiatan</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="container pb-5">
+      <div class="cta-box rounded-3 p-4 d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+        <div>
+          <h3 class="h5 fw-bold mb-1">Ada informasi yang ingin ditanyakan?</h3>
+          <p class="small text-body-secondary mb-0">Sampaikan kebutuhan kunjungan, kegiatan, atau magang melalui halaman Hubungi Kami.</p>
+        </div>
+        <a href="hubungi.html" class="btn btn-primary btn-sm px-3 flex-shrink-0">Hubungi Kami →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer text-white-50 pt-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <h4 class="h5 fw-bold text-white">TEFA UHT</h4>
+          <p class="small">Teaching Factory UHT Produksi Susu Politeknik Negeri Jember. Ruang belajar, produksi, dan kolaborasi pengolahan susu.</p>
+          <p class="small mb-0">Jl. Mastrip, Jember, Jawa Timur</p>
+        </div>
+        <div class="col-6 col-lg-4">
+          <h5 class="small fw-bold text-white">Jelajahi</h5>
+          <ul class="list-unstyled d-flex flex-wrap column-gap-3 row-gap-1 small mb-0">
+            <li><a href="Beranda.html">Beranda</a></li>
+            <li><a href="tentang.html">Tentang Kami</a></li>
+            <li><a href="produk.html">Produk</a></li>
+            <li><a href="layanan.html">Layanan</a></li>
+            <li><a href="informasi.html">Informasi</a></li>
+            <li><a href="hubungi.html">Hubungi Kami</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h5 class="small fw-bold text-white">Mari terhubung</h5>
+          <p class="small mb-0">Telepon contoh: 0331 000 000<br>Email contoh: tefa-uht@example.com<br>Bukan kontak resmi terverifikasi.</p>
+        </div>
+      </div>
+      <hr class="border-light opacity-25 mt-4">
+      <p class="small pb-4 mb-0">© <span id="year">2026</span> TEFA UHT · Politeknik Negeri Jember. Purwarupa website institusional. Detail produk, layanan, dan kontak bertanda contoh perlu diverifikasi sebelum digunakan.</p>
+    </div>
+  </footer>
+
+  <!-- MODAL BOOTSTRAP (pop-up foto besar). modal fade = animasi muncul halus; modal-dialog-centered = di tengah layar; btn-close = tombol tutup; Esc, klik area gelap, dan fokus keyboard sudah diatur otomatis oleh Bootstrap. -->
+  <div class="modal fade" id="lightbox" tabindex="-1" aria-label="Foto diperbesar" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content overflow-hidden border-0">
+        <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3 z-3" data-bs-dismiss="modal" aria-label="Tutup"></button>
+        <img id="lightboxImg" class="lightbox-img w-100" src="" alt="">
+        <div class="modal-body">
+          <p id="lightboxCaption" class="small fw-medium mb-0"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/galeri.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEFA UHT - Teaching Factory Susu Polije</title>
+  <!-- BOOTSTRAP CSS (dari CDN). Dipanggil SEBELUM style.css supaya style.css bisa menimpa gaya bawaan Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS buatanmu: hanya warna, font, dan hal khas desain yang tidak ada di Bootstrap -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- TOP BAR. Utilitas Bootstrap: text-white (teks putih), small (teks kecil), py-1 (padding atas-bawah), d-flex + justify-content-between (dua teks di kiri dan kanan), d-none d-md-inline (disembunyikan di HP) -->
+  <div class="topbar text-white small py-1">
+    <div class="container d-flex justify-content-between">
+      <span>POLITEKNIK NEGERI JEMBER</span>
+      <span class="d-none d-md-inline">Pendidikan vokasi · Inovasi · Kolaborasi</span>
+    </div>
+  </div>
+
+  <!-- NAVBAR BOOTSTRAP (menggantikan navbar + hamburger buatan sendiri). navbar-expand-md = menu berjajar di layar >= 768px, jadi hamburger di bawahnya. sticky-top = menempel di atas saat di-scroll. Tombol hamburger membuka elemen id="menu" lewat data-bs-toggle="collapse" (tanpa JS buatan sendiri). -->
+  <nav class="navbar navbar-expand-md bg-white border-bottom sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex flex-column lh-1" href="Beranda.html">
+        <strong class="brand-name">TEFA UHT</strong>
+        <small class="brand-sub">Unit Produksi Susu · Polije</small>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Buka menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto gap-md-4">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="Beranda.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang Kami</a></li>
+          <li class="nav-item"><a class="nav-link" href="produk.html">Produk</a></li>
+          <li class="nav-item"><a class="nav-link" href="layanan.html">Layanan</a></li>
+          <li class="nav-item"><a class="nav-link" href="informasi.html">Informasi</a></li>
+          <li class="nav-item"><a class="nav-link" href="hubungi.html">Hubungi Kami</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO. position-relative = patokan posisi; d-flex align-items-center = isi di tengah vertikal; text-white = teks putih. Foto latar: position-absolute top-0 start-0 w-100 h-100 = menutupi seluruh banner; object-fit-cover = dipotong rapi. -->
+    <header class="hero position-relative d-flex align-items-center text-white overflow-hidden">
+      <img class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" src="img/BANNER.webp" alt="Banner Tefa UHT">
+      <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100"></div>
+      <div class="container position-relative py-5">
+        <div class="row">
+          <div class="col-lg-8">
+            <p class="eyebrow hero-eyebrow fw-semibold mb-3">TEACHING FACTORY · POLIJE</p>
+            <h1 class="hero-title fw-bold mb-3">Inovasi Pengolahan Susu untuk Masa Depan</h1>
+            <p class="hero-desc mb-4">Menghubungkan pendidikan vokasi, produksi, dan pengembangan produk susu dalam satu ekosistem pembelajaran nyata.</p>
+            <p class="hero-tagline d-flex align-items-center gap-3 mb-0"><span class="hero-line"></span>Belajar. Berinovasi. Berproduksi.</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- TENTANG. GRID Bootstrap: row = baris, gy-4 gx-lg-5 = jarak antar kolom, col-md-6 = tiap kolom separuh lebar (6 dari 12) mulai layar md, menumpuk di HP. ratio ratio-* = kotak dengan perbandingan tetap untuk foto. -->
+    <section class="container py-5">
+      <div class="row align-items-center gy-4 gx-lg-5">
+        <div class="col-md-6">
+          <div class="ratio ratio-about rounded-3 overflow-hidden bg-body-secondary "><img class="object-fit-cover" src="img/Beranda1.jpeg" alt="Botol susu di lini pengisian produksi TEFA UHT"></div>
+        </div>
+        <div class="col-md-6">
+          <p class="eyebrow text-primary fw-semibold mb-2">TENTANG TEFA UHT</p>
+          <h2 class="section-title fw-bold mb-3">Ruang belajar dengan pengalaman industri nyata.</h2>
+          <p class="text-body-secondary mb-4">TEFA UHT merupakan wadah pembelajaran berbasis produksi di Politeknik Negeri Jember. Mahasiswa mengenal proses pengolahan susu, praktik mutu, dan pengembangan produk melalui kegiatan yang terarah.</p>
+          <a href="tentang.html" class="btn btn-outline-primary btn-sm">Profil TEFA →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUK. bg-body-tertiary = latar abu-abu muda bawaan Bootstrap. Judul + tombol: flex-column (bertumpuk di HP) lalu flex-md-row (sejajar di layar md). -->
+    <section class="products-section py-5">
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-start gap-3 mb-4">
+          <div>
+            <h2 class="section-title fw-bold mb-1">Kreasi dari pengolahan susu</h2>
+            <p class="small text-body-secondary mb-0">Kenali ragam produk dan potensi pengembangannya di TEFA UHT.</p>
+          </div>
+          <a href="produk.html" class="btn btn-outline-primary btn-sm">Katalog Produk →</a>
+        </div>
+
+        <!-- GRID KARTU: row-cols-1 = 1 kartu per baris di HP, row-cols-sm-2 = 2 kartu, row-cols-lg-4 = 4 kartu di layar besar. card = komponen kartu Bootstrap, h-100 = tinggi sama rata, stretched-link = seluruh kartu bisa diklik. -->
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3">
+          <div class="col">
+            <article class="card hover-card h-100 overflow-hidden" data-reveal>
+              <div class="ratio ratio-3x2 rounded-0 overflow-hidden bg-body-secondary "><img class="object-fit-cover" src="img/susu ori.jpg" alt="Susu pasteurisasi rasa original dalam botol"></div>
+              <div class="card-body">
+                <h3 class="card-title h6 fw-bold">Susu Pasteurisasi Original</h3>
+                <p class="card-text small text-body-secondary">Susu segar dengan rasa alami dan cocok untuk konsumsi sehari-hari.</p>
+                <a href="produk.html#pasteurisasi-original" class="small fw-medium text-decoration-none stretched-link">Lihat di katalog →</a>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card hover-card h-100 overflow-hidden" data-reveal>
+              <div class="ratio ratio-3x2 rounded-0 overflow-hidden bg-body-secondary "><img class="object-fit-cover" src="img/susu straw.jpg" alt="Susu pasteurisasi rasa cokelat dalam botol"></div>
+              <div class="card-body">
+                <h3 class="card-title h6 fw-bold">Susu Pasteurisasi Strawberry</h3>
+                <p class="card-text small text-body-secondary">Perpaduan susu dengan cita rasa stroberi yang menyegarkan.</p>
+                <a href="produk.html#pasteurisasi-Strawberry" class="small fw-medium text-decoration-none stretched-link">Lihat di katalog →</a>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card hover-card h-100 overflow-hidden" data-reveal>
+              <div class="ratio ratio-3x2 rounded-0 overflow-hidden bg-body-secondary "><img class="object-fit-cover" src="img/susu uht.avif" alt="Susu pasteurisasi rasa stroberi dalam botol"></div>
+              <div class="card-body">
+                <h3 class="card-title h6 fw-bold">Susu UHT</h3>
+                <p class="card-text small text-body-secondary">Diproses dengan suhu tinggi untuk daya simpan lebih lama.</p>
+                <a href="produk.html#susu uht" class="small fw-medium text-decoration-none stretched-link">Lihat di katalog →</a>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card hover-card h-100 overflow-hidden" data-reveal>
+              <div class="ratio ratio-3x2 rounded-0 overflow-hidden bg-body-secondary "><img class="object-fit-cover" src="img/susu steril.jpeg" alt="Susu pasteurisasi putih manis dalam botol"></div>
+              <div class="card-body">
+                <h3 class="card-title h6 fw-bold">Susu Steril</h3>
+                <p class="card-text small text-body-secondary">Susu yang melalui proses sterilisasi untuk menjaga kualitas dan daya simpannya.</p>
+                <a href="produk.html#susu steril" class="small fw-medium text-decoration-none stretched-link">Lihat di katalog →</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER CTA. rounded-3 = sudut membulat, p-4 = padding, d-flex flex-column flex-md-row = bertumpuk di HP, sejajar di layar md ke atas, gap-3 = jarak, btn btn-primary = tombol Bootstrap. -->
+    <section class="container py-5">
+      <div class="cta-box rounded-3 p-4 d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+        <div>
+          <h3 class="h5 fw-bold mb-1">Dari ide menjadi kolaborasi</h3>
+          <p class="small text-body-secondary mb-0">Diskusikan kebutuhan pembelajaran, pengembangan produk, atau kerja sama bersama TEFA UHT.</p>
+        </div>
+        <a href="hubungi.html" class="btn btn-primary btn-sm px-3 flex-shrink-0">Hubungi Kami →</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER. GRID: row g-4 = baris dengan jarak antar kolom. col-lg-5 / col-6 col-lg-4 / col-6 col-lg-3 = di layar besar ketiganya sejajar (5+4+3 = 12), di HP kolom pertama penuh dan dua lainnya berdampingan. -->
+  <footer class="footer text-white-50 pt-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <h4 class="h5 fw-bold text-white">TEFA UHT</h4>
+          <p class="small">Teaching Factory UHT Produksi Susu Politeknik Negeri Jember. Ruang belajar, produksi, dan kolaborasi pengolahan susu.</p>
+          <p class="small mb-0">Jl. Mastrip, Jember, Jawa Timur</p>
+        </div>
+        <div class="col-6 col-lg-4">
+          <h5 class="small fw-bold text-white">Jelajahi</h5>
+          <ul class="list-unstyled d-flex flex-wrap column-gap-3 row-gap-1 small mb-0">
+            <li><a href="Beranda.html">Beranda</a></li>
+            <li><a href="tentang.html">Tentang Kami</a></li>
+            <li><a href="produk.html">Produk</a></li>
+            <li><a href="layanan.html">Layanan</a></li>
+            <li><a href="informasi.html">Informasi</a></li>
+            <li><a href="hubungi.html">Hubungi Kami</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h5 class="small fw-bold text-white">Mari terhubung</h5>
+          <p class="small mb-0">Telepon contoh: 0331 000 000<br>Email contoh: tefa-uht@example.com<br>Bukan kontak resmi terverifikasi.</p>
+        </div>
+      </div>
+      <hr class="border-light opacity-25 mt-4">
+      <p class="small pb-4 mb-0">© <span id="year">2026</span> TEFA UHT · Politeknik Negeri Jember. Purwarupa website institusional. Detail produk, layanan, dan kontak bertanda contoh perlu diverifikasi sebelum digunakan.</p>
+    </div>
+  </footer>
+
+  <!-- BOOTSTRAP JS: wajib ada agar hamburger dan pop-up (modal) berfungsi. Satu file "bundle" sudah termasuk Popper. Dipanggil SEBELUM js/script.js. -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
